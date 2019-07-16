@@ -3,14 +3,25 @@
     flex-direction: column
     justify-content: center
     align-items: center
-    height: 90vh
+    min-height: 90vh
+    padding: 50px 0
     &__header
         font-size: 20px
-        margin-bottom: 30px
+        margin: 30px 0
     &__list
         display: flex
         flex-direction: row
         flex-wrap: wrap
+        width: 100vw
+        margin: 0 auto
+        +md
+            width: 60vw
+        &--also
+            flex-direction: column
+            width: 60vw
+            margin: 0 auto
+            
+
     &__item
         flex-basis: 33%
         list-style: none
@@ -23,6 +34,10 @@
 .fab
     font-size: 30px
     color: #222
+
+.also
+    display: inline-block
+    margin-bottom: 0
     
 
 
