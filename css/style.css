@@ -184,7 +184,7 @@ section {
   content: "";
   width: 100vw;
   height: 90vh;
-  background-image: url("../src/assets/manhattan.jpg");
+  background-image: url("../src/assets/home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -315,7 +315,7 @@ section {
 
 .technologies__header {
   font-size: 20px;
-  margin: 30px 0;
+  margin: 30px 0 50px 0;
 }
 
 .technologies__list {
@@ -347,27 +347,34 @@ section {
   margin: 0 auto;
 }
 
+@media (min-width: 992px) {
+  .technologies__list--also {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .technologies__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
   list-style: none;
   padding: 10px 20px;
   text-align: center;
-  margin-bottom: 30px;
-}
-
-.technologies__item--name {
-  display: block;
+  margin-bottom: 20px;
 }
 
 .fab {
   font-size: 30px;
   color: #222;
-}
-
-.also {
-  display: inline-block;
-  margin-bottom: 0;
 }
 
 .projects {
@@ -391,6 +398,7 @@ section {
 }
 
 .projects__header {
+  margin-top: 50px;
   font-size: 20px;
 }
 
@@ -454,6 +462,15 @@ section {
   text-decoration: underline;
 }
 
+@media (min-width: 992px) {
+  .projects__name {
+    width: 50%;
+    text-align: center;
+    -webkit-transform: translateX(85%);
+            transform: translateX(85%);
+  }
+}
+
 .projects__link {
   text-decoration: none;
   color: #fff;
@@ -487,6 +504,9 @@ section {
       flex-basis: 50%;
   margin-right: 10px;
   text-align: justify;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .projects__site {
@@ -517,6 +537,7 @@ section {
 
 .projects__link:hover > .style {
   color: lime;
+  cursor: pointer;
 }
 
 .projects__text {
@@ -597,6 +618,42 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__contact {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer__contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__media {
+  padding: 20px;
+  list-style: none;
+}
+
+.footer__media:hover {
+  cursor: pointer;
+}
+
+.far {
+  font-size: 30px;
+  color: #222;
+}
+
+.hover:hover {
+  color: lime;
 }
 
 .main {

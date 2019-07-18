@@ -10,6 +10,7 @@
     color:#fff
     
     &__header
+        margin-top: 50px
         font-size: 20px
         
         
@@ -42,6 +43,11 @@
         width: 100%
         text-align: center
         text-decoration: underline
+        +lg
+            width: 50%
+            text-align: center
+            // margin-left: 50%
+            transform: translateX(85%)
     &__link
         text-decoration: none
         color: #fff
@@ -60,6 +66,7 @@
         flex-basis: 50%
         margin-right: 10px
         text-align: justify
+        align-self: center
     &__site
         margin-right: 20px
     &__link
@@ -73,6 +80,7 @@
             color: lime
             > .style
                 color: lime
+                cursor: pointer
     
     &__text
         font-size: 14px
