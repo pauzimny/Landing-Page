@@ -1,11 +1,8 @@
 @import breakpoints
 
 .header
-    // display: none
-    // +md
     display: flex
     width: 100%
-    // flex-basis: 15vh
     position: fixed
     background-color: #fff
     z-index: 50
@@ -20,6 +17,11 @@
     border-color: transparent
     transition: all 1000ms
     background-color: transparent
+    &:focus 
+    outline: none !important
+   
+  
+
     &:hover
         cursor: pointer
     +md
@@ -30,7 +32,6 @@
     font-size: 25px
     color: lime
    
- 
 
 
 .nav
@@ -71,15 +72,10 @@
             height: 10vh
         &__item
             padding-top: 0
-        // &__item
-        //     list-style: none
             
         &__link
             padding: 2px 5px
             &:hover
-                // color: #fff
-                // background-color: #000
-                // opacity: .5
                 border-bottom: 1px solid lime
 
 .active
@@ -91,6 +87,6 @@
    
 .active-btn
     margin-left: 55vw
-    border: none
-    border-color: transparent
+    transform: rotate(90deg)
+   
 

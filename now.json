@@ -1,0 +1,14 @@
+{
+    "name": "one page",
+    "version": 2,
+    "builds": [{
+            "src": "./src/*.html",
+            "use": "@now/static"
+        },
+        {
+            "src": "./src/js/*.js",
+            "use": "@now/node"
+        }
+    ]
+
+}

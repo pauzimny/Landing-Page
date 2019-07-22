@@ -1,9 +1,9 @@
 const mobileNav = document.querySelector(".nav");
 const mobileBtn = document.querySelector(".nav-mobile__button");
+// const mobileBar=document.querySelector(".fa-bars");
 
 const showMenu = () => {
   mobileNav.classList.toggle("active");
-  console.log("show");
   mobileBtn.classList.toggle("active-btn");
 };
 
