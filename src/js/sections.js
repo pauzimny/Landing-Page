@@ -14,7 +14,7 @@ $(".nav__item:nth-child(2)").on("click", () => {
     {
       scrollTop: $(".about-me").offset().top
     },
-    1000
+    2000
   );
 });
 
@@ -23,7 +23,7 @@ $(".nav__item:nth-child(3)").on("click", () => {
     {
       scrollTop: $(".technologies").offset().top
     },
-    2000
+    3000
   );
 });
 
@@ -32,7 +32,7 @@ $(".nav__item:nth-child(4)").on("click", () => {
     {
       scrollTop: $(".projects").offset().top
     },
-    2500
+    4000
   );
 });
 
@@ -41,6 +41,6 @@ $(".nav__item:nth-child(5)").on("click", () => {
     {
       scrollTop: $(".footer").offset().top
     },
-    2700
+    5000
   );
 });
