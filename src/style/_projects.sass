@@ -75,7 +75,9 @@
         align-items: center
         justify-content: center
         text-decoration: none
-        color: #fff
+        color: lime
+        +lg
+            color: #fff
         &:hover
             color: lime
             > .style
@@ -95,7 +97,6 @@
         background-repeat: no-repeat
         position: relative
         overflow: hidden
-       
         &:hover > .projects__hover 
             transform: translateY(0%)
             cursor: pointer   
@@ -109,11 +110,11 @@
         transition: 1s
         background-color: #555
         opacity: .8
-        transform: translateY(100%)
         display: flex
         align-items: center
         justify-content: center
-          
+        +lg 
+            transform: translateY(100%)
     &:hover
         cursor: pointer
         +lg
@@ -123,6 +124,8 @@
 
 .style
     font-size: 30px
-    color: #fff 
+    color: lime
+    +lg
+        color: #fff 
     
 
