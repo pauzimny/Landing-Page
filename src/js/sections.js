@@ -44,3 +44,14 @@ $(".nav__item:nth-child(5)").on("click", () => {
     5000
   );
 });
+
+$(document).bind("scroll", function(e) {
+  $("section").each(function() {
+    if (
+      $(this).offset().top < window.pageYOffset + 5 &&
+      $(this).offset().top + $(this).height() > window.pageYOffset + 5
+    ) {
+      window.location.hash = $(this).attr("id");
+    }
+  });
+});
