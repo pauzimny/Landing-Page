@@ -3,11 +3,11 @@ const aboutMeContainer = document.querySelector(".about-me__text-container");
 aboutMeContent = [
   {
     id: 1,
-    content: `About a year ago, in August 2018, after almost 10 years in retail industry, I realized I achieved my goals as a manager and now I want to do something creative and challenging on a different field. I `
+    content: `About a year ago, in August 2018, after almost 10 years in retail industry, I realized I achieved my goals as a manager and now I want to do something creative and challenging on a different field. `
   },
   {
     id: 2,
-    content: ` found this in IT and started to learn front-end technologies. I took couple Udemy courses to get basic knowledge about CSS, Javascript and Node.js. I also attended to two “Akademia Developera” courses organized by PGS Software – basic and advanced. After both I was awarded with diplomas. I made a few non-commercial projects to train my skills.`
+    content: ` I found this in IT and started to learn front-end technologies. I took couple Udemy courses to get basic knowledge about CSS, Javascript and Node.js. I also attended to two “Akademia Developera” courses organized by PGS Software – basic and advanced. After both I was awarded with diplomas. I made a few non-commercial projects to train my skills.`
   },
   {
     id: 3,
