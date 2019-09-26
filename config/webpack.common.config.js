@@ -2,13 +2,13 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-// const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: "./src/js/index.js",
   output: {
     path: path.resolve(__dirname, "../dist"),
-    filename: "[name].[chunkhash].js"
+    filename: "[name]-[contenthash].js"
   },
   mode: "development",
   module: {
@@ -23,10 +23,6 @@ module.exports = {
           }
         }
       },
-      //   {
-      //     test: [/.css$/],
-      //     use: ["style-loader", "css-loader"]
-      //   },
 
       {
         test: /\.(woff(2)?|ttf|eot|png|jpg|gif|svg)$/,
@@ -50,7 +46,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "style.[chunkhash].css"
+      filename: "style-[contenthash].css"
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
@@ -61,7 +57,7 @@ module.exports = {
         from: "./src/assets",
         to: "./assets"
       }
-    ])
-    // new CleanWebpackPlugin()
+    ]),
+    new CleanWebpackPlugin()
   ]
 };

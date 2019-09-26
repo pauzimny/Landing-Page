@@ -1,14 +1,9 @@
 {
-    "name": "one page",
+    "name": "portfolio",
     "version": 2,
     "builds": [{
-            "src": "./src/*.html",
-            "use": "@now/static"
-        },
-        {
-            "src": "./src/js/*.js",
-            "use": "@now/node"
-        }
-    ]
+        "src": "package.json",
+        "use": "@now/static-build"
+    }]
 
 }
